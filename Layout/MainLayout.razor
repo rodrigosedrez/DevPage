@@ -1,0 +1,75 @@
+﻿@inherits LayoutComponentBase
+
+<MudThemeProvider @bind-IsDarkMode="@_isDarkMode" Theme="_theme"/>
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+
+<MudLayout>
+    <MudAppBar Class="pt-4 mb-16" Color="@Color.Inherit">
+
+        <MudImage 
+            Src="logo512.png" 
+            Elevation="25" 
+            Class="rounded-lg" 
+            Height="50" 
+            Width="50" />
+
+        <MudButton 
+            Variant="Variant.Text"  
+            Class="ml-10" 
+            Color="Color.Inherit" 
+            Href="/">
+            Home
+        </MudButton>
+
+        <MudButton 
+            Variant="Variant.Text"  
+            Color="Color.Inherit" 
+            Href="/aboutme">
+            About me 
+        </MudButton>
+
+        <MudButton Variant="Variant.Text" 
+            Href="/projects"
+            Color="Color.Inherit">
+            Projects
+        </MudButton>
+
+
+        <MudSpacer />
+
+        <MudIconButton 
+            Target="_blank" 
+            Icon="@Icons.Custom.Brands.GitHub" 
+            Color="Color.Inherit" 
+            Href="https://github.com/rodrigosedrez" />
+
+        <MudIconButton 
+            Target="_blank" 
+            Icon="@Icons.Custom.Brands.Instagram" 
+            Color="Color.Inherit" 
+            Href="https://www.instagram.com/rodrigosedrez/" />
+
+        <MudIconButton 
+            Target="_blank" 
+            Icon="@Icons.Custom.Brands.Facebook" 
+            Color="Color.Inherit" 
+            Href="https://www.facebook.com/rodrigo.sedrez.3/" />
+
+        <MudIconButton 
+            Target="_blank" 
+            Icon="@Icons.Custom.Brands.LinkedIn" 
+            Color="Color.Inherit" 
+            Href="https://www.linkedin.com/in/rodrigo-sedrez-a9089963/" />
+
+        
+        <MudSwitch @bind-Checked="@_isDarkMode" Color="Color.Primary" Class="ma-4" T="bool" Label="Dark Mode" />
+
+    </MudAppBar>
+
+    <MudMainContent Class="mt-16">
+        @Body
+    </MudMainContent>
+
+</MudLayout>

@@ -1,0 +1,72 @@
+﻿@page "/"
+
+
+<MudLayout>
+   
+        <MudText Class="my-16">
+            <center>
+            <h2>
+                The focus of this page is to demonstrate some of my skills as a .net programmer.
+            </h2>
+            </center>
+            
+        </MudText>
+        <center>
+        <MudCarousel Class="rounded-lg border-2 border-solid mud-border-primary"
+                     Style="width:65%; min-width:400px; max-width:650px; height:400px"
+                     ShowArrows="@arrows"
+                     ShowBullets="@bullets"
+                     EnableSwipeGesture="@enableSwipeGesture"
+                     AutoCycle="@autocycle" TData="object">
+
+            <MudCarouselItem Transition="@Transition.Slide"
+                             Style="@($"background:{Colors.Blue.Lighten5}")">
+
+                <MudGrid>
+                    <MudItem xs="12">
+                        <MudImage Src="cafefacul.png"  Style="width:80%" Class="my-2"/>
+
+                        <MudText Class="my-2 " Style="@($"color:{Colors.Grey.Darken3}")">
+                               <h4>
+                                Page created for my Term Paper
+                               </h4> 
+                            </MudText>
+                       
+                    </MudItem>
+                    <MudItem>
+                       
+                    </MudItem>
+                </MudGrid>
+            </MudCarouselItem>
+
+
+            <MudCarouselItem Transition="@Transition.Slide" Style="@($"background:{Colors.Blue.Lighten2};")">
+                <MudGrid>
+                        <MudItem xs="12">
+                        <MudImage Src="mukilist.png"    Style="width:32%" />
+                        <MudImage Src="mukiranaAdd.png" Style="width:30%" />
+                        <MudImage Src="mukiproduct.png" Style="width:32%" />
+                        </MudItem>
+                </MudGrid>
+            </MudCarouselItem>
+
+
+            <MudCarouselItem Transition="@Transition.Slide" Color="@Color.Success">
+              
+                <MudGrid>
+                    <MudImage Src="bannersSkills.png" Style="width:100%" />
+                </MudGrid>
+                    
+
+                
+            </MudCarouselItem>
+
+
+        </MudCarousel>
+        </center>
+  
+    
+  
+
+</MudLayout>
+
