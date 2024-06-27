@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deply:
+  deploy:
     environment:
       name: github-pages
       url: ${{ steps.deplyment.outputs.page_url }}
