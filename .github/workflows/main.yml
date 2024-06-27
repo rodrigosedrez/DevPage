@@ -19,7 +19,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deplyment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,6 +29,7 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 8.0.x
+
 
       - name: Install .NET Wasm Tools
         run: dotnet workload install wasm-tools
@@ -40,7 +41,7 @@ jobs:
         run: dotnet build -c Release --no-restore
 
       - name: Publish .NET
-        run: dotnet publish DevPage.csproj -c:Release -o docs --nologo
+        run: dotnet publish BlazorDeploy.csproj -c:Release -o docs --nologo
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -52,4 +53,4 @@ jobs:
 
       - name: Deploy
         id: deployment
-        uses: actions/deply-pages@v4
+        uses: actions/deploy-pages@v4
