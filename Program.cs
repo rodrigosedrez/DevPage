@@ -12,3 +12,4 @@ builder.Services.AddMudServices();
 builder.Services.AddLocalization();
 
 await builder.Build().RunAsync();
+
