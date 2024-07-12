@@ -1,5 +1,4 @@
 ﻿@inherits LayoutComponentBase
-@inject IJSRuntime JsRuntime
 
 
 <MudThemeProvider @bind-IsDarkMode="@_isDarkMode" Theme="_theme"/>
@@ -18,7 +17,7 @@
 
         <MudLink Class="ml-10"
                  Color="Color.Inherit"
-                 Href="/DevPage">
+                 href="" Match="NavLinkMatch.All">
             Home
         </MudLink>
 
