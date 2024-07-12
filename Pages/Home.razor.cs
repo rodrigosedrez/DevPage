@@ -4,7 +4,7 @@ using DevPage;
 
 namespace DevPage.Pages
 {
-    public partial class Home 
+    public partial class Home
     {
         private bool arrows = true;
         private bool bullets = false;
@@ -12,6 +12,6 @@ namespace DevPage.Pages
         private bool autocycle = true;
         private Transition transition = Transition.Slide;
 
-   
+
     }
 }
