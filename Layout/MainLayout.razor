@@ -7,27 +7,30 @@
 
 
 <MudLayout>
-    <MudAppBar Class="pt-4 mb-16" Color="@Color.Inherit">
+    <MudAppBar Class="pt-4 mb-16 " Color="@Color.Inherit">
 
         <MudImage Src="logo512.png"
                   Elevation="25"
                   Class="rounded-lg"
+                  Style="margin-right:10px"
                   Height="50"
                   Width="50" />
 
-        <MudLink Class="ml-10"
+        <MudLink Class="mx-2"
                  Color="Color.Inherit"
                  href="" Match="NavLinkMatch.All">
             Home
         </MudLink>
 
-        <MudButton Variant="Variant.Text"
+        <MudButton Class="mx-2"
+                   Variant="Variant.Text"
                    Color="Color.Inherit"
                    Href="aboutme">
             About me
         </MudButton>
 
         <MudButton Variant="Variant.Text"
+                   Class="mx-2"
                    Href="projects"
                    Color="Color.Inherit">
             Projects

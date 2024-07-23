@@ -1,8 +1,70 @@
 ﻿@page "/projects"
 
+<MudLayout>
+    <center>
+       
+      <h1>Projects</h1>
+       
+        <MudGrid Class="py-10 d-flex justify-center flex-grow-1 gap-4">
+            <MudItem Class="border-2 border-solid rounded-lg ">
+                <MudImage Src="google-play-store-logo-header.png" Style="width:100px" Class="rounded-lg mt-16 pt-16" />
+            </MudItem>
+            <MudItem Class="border-2 border-solid rounded-lg ">
 
-<h3>Projects</h3>
+                <MudSimpleTable >
+                   <center>
+                    <thead>
+                        <tr>
+                            <MudLink Target="_blank" Href="https://play.google.com/store/apps/details?id=com.MUKIRANALIST.mukiranalist" Class="my-4" Style="align-items:start">Playstore Mukirana</MudLink>
 
-@code {
+                        </tr>
+                    </thead>
+                    <tbordy>
+                        <tr>
+                            <MudImage Src="mukirana.png" Width="322" Height="250" Class="rounded-lg ma-4" />
+                        </tr>
+                        <tr>
+                            <MudText Class="my--8" Style="align-items:start">Mukirana app is a simple list aplication</MudText>
+                        </tr>
+                    </tbordy>
+                   </center>
+                   
+               </MudSimpleTable>
+                
+            </MudItem>
+        </MudGrid>
 
-}
+    <MudGrid Class="py-10 d-flex justify-center flex-grow-1 gap-4">
+        <MudItem Class="border-2 border-solid rounded-lg ">
+            <MudImage Src="icon-192.png" Style="width:100px" Class="rounded-lg mt-16 pt-16" />
+        </MudItem>
+        <MudItem Class="border-2 border-solid rounded-lg ">
+
+            <MudSimpleTable>
+                <center>
+                <thead>
+                    <tr>
+                        <MudLink Target="_blank" Href="https://github.com/rodrigosedrez/CafeteriaBar" Class="my-4" Style="align-items:start">Cafeteria Bar</MudLink>
+
+                    </tr>
+                </thead>
+                <tbordy>
+                    <tr>
+                        <MudImage Src="cafefacul.png" Width="322" Height="250" Class="rounded-lg ma-4" />
+                    </tr>
+                    <tr>
+                        <MudText Class="my--8" Style="align-items:start">Criated on university to use SCRUM, AGILE and full implemen a project.</MudText>
+                    </tr>
+                </tbordy>
+                </center>
+
+            </MudSimpleTable>
+
+        </MudItem>
+    </MudGrid>
+    </center>
+ 
+
+   
+
+</MudLayout>
